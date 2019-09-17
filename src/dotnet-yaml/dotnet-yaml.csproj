@@ -5,7 +5,7 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <RootNamespace>Epignosisx.DotNet.Yaml</RootNamespace>
     <PackAsTool>true</PackAsTool>
-    <ToolCommandName>botsay</ToolCommandName>
+    <ToolCommandName>yaml</ToolCommandName>
   </PropertyGroup>
 
   <ItemGroup>
