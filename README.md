@@ -14,12 +14,12 @@ yaml --input <file or dir to process> --filter <glob to filter dir input>
 
 Example:
 
-Process current directory for .yml files
+Process current directory for `.yml` files
 ```
 $ yaml --input . --filter *.yml
 ```
 
-Process some directory for .yml or .yaml files
+Process directory `/foo/bar` for `.yml` or `.yaml` files
 ```
 $ yaml --input /foo/bar --filter *.yml --filter *.yaml
 ```
