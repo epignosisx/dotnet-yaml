@@ -19,6 +19,11 @@ Process current directory for `.yml` files
 $ yaml --input . --filter *.yml
 ```
 
+Process current directory recursively for `.yml` files
+```
+$ yaml --input . --filter **/*.yml
+```
+
 Process directory `/foo/bar` for `.yml` or `.yaml` files
 ```
 $ yaml --input /foo/bar --filter *.yml --filter *.yaml
