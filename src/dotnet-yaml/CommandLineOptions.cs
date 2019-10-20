@@ -13,10 +13,12 @@ namespace Epignosisx.DotNet.Yaml
             Option inputOpt = new Option(new string[]{"-i", "--input"}, "File or directory to process");
             inputOpt.Argument = new Argument<string>().ExistingFileOrDirectoryOnly();
             inputOpt.Argument.Arity = ArgumentArity.ExactlyOne;
+            inputOpt.Argument.SetDefaultValue(".");
 
             Option filterOpt = new Option(new string[]{"-f", "--filter"}, "Glob to filter directory input. Defaults to .yml and .yaml files in top level dir.");
             filterOpt.Argument = new Argument<string[]>();
             filterOpt.Argument.Arity = ArgumentArity.ZeroOrMore;
+            filterOpt.Argument.SetDefaultValue(new string[] { "*.yaml", "*.yml" });
 
             Option verboseOpt = new Option(new string[]{"-v", "--verbose"}, "Verbose output");
             verboseOpt.Argument = new Argument<bool>();
