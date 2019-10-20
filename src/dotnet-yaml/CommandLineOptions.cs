@@ -10,7 +10,7 @@ namespace Epignosisx.DotNet.Yaml
 
         public CommandLineApplication()
         {
-            Option inputOpt = new Option(new string[]{"-i", "--input"}, "File or directory to process");
+            Option inputOpt = new Option(new string[]{"-i", "--input"}, "File or directory to process. Defaults to current dir.");
             inputOpt.Argument = new Argument<string>().ExistingFileOrDirectoryOnly();
             inputOpt.Argument.Arity = ArgumentArity.ExactlyOne;
             inputOpt.Argument.SetDefaultValue(".");
