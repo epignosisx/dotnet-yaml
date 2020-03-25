@@ -16,9 +16,9 @@ namespace Epignosisx.DotNet.Yaml
                 logger.Verbose($"{filename}: valid");
                 return true;
             }
-            catch(SyntaxErrorException ex)
+            catch(YamlException ex)
             {
-                logger.Error($"{filename} invalid: {ex.Start.ToString()}");
+                logger.Error($"{filename} invalid: {ex.Message}");
                 return false;
             }
         }
